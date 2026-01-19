@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart IQ - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Smart IQ Logo" class="logo">
+    <h2>General Knowledge Quiz</h2>
+    <form id="quizForm" action="/submit-quiz" method="POST">
+      <input type="hidden" id="studentName" name="name">
+      <input type="hidden" id="studentProfession" name="profession">
+
+      <!-- Question 1 -->
+      <div class="question-section">
+        <div class="options">
+            <p>1. If 3 cats can catch 3 mice in 3 minutes, how long will it take 100 cats to catch 100 mice?</p>
+          <input type="radio" id="q1a" name="q1" value="3 minutes" required>
+          <label for="q1a">3 minutes</label><br>
+          <input type="radio" id="q1b" name="q1" value="100 minutes">
+          <label for="q1b">100 minutes</label><br>
+          <input type="radio" id="q1c" name="q1" value="33 minutes">
+          <label for="q1c">33 minutes</label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-section">
+        <p>2. A plane crashes on the border of two countries. Where do they bury the survivors?</p>
+        <div class="options">
+          <input type="radio" id="q2a" name="q2" value="Nowhere" required>
+          <label for="q2a">Nowhere</label><br>
+          <input type="radio" id="q2b" name="q2" value="In the country where the plane crashed">
+          <label for="q2b">In the country where the plane crashed</label><br>
+          <input type="radio" id="q2c" name="q2" value="In both countries">
+          <label for="q2c">In both countries</label>
+        </div>
+      </div>
+
+      <!-- Add rest of questions similarly -->
+      <!-- Question 3 -->
+      <div class="question-section">
+        <div class="options">
+            <p>3. Which algorithm has O(n log n) worst-case time complexity for sorting?</p>
+          <input type="radio" id="q3a" name="q3" value="Merge Sort" required>
+          <label for="q3a">Merge Sort</label><br>
+          <input type="radio" id="q3b" name="q3" value="Quick Sort">
+          <label for="q3b">Quick Sort</label><br>
+          <input type="radio" id="q3c" name="q3" value="Heap Sort">
+          <label for="q3c">Heap Sort</label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-section">
+        <div class="options">
+            <p>4. Which planet rotates on its side?</p>
+          <input type="radio" id="q4a" name="q4" value="Uranus" required>
+          <label for="q4a">Uranus</label><br>
+          <input type="radio" id="q4b" name="q4" value="Neptune">
+          <label for="q4b">Neptune</label><br>
+          <input type="radio" id="q4c" name="q4" value="Venus">
+          <label for="q4c">Venus</label>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question-section">
+        <p>5. What is the next number in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, _?</p>
+        <div class="options">
+          <input type="radio" id="q5a" name="q5" value="21" required>
+          <label for="q5a">21</label><br>
+          <input type="radio" id="q5b" name="q5" value="18">
+          <label for="q5b">18</label><br>
+          <input type="radio" id="q5c" name="q5" value="24">
+          <label for="q5c">24</label>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question-section">
+        <div class="options">
+            <p>6. Before Mount Everest was discovered, what was the highest mountain on Earth?</p>
+          <input type="radio" id="q6a" name="q6" value="Mount Everest" required>
+          <label for="q6a">Mount Everest</label><br>
+          <input type="radio" id="q6b" name="q6" value="K2">
+          <label for="q6b">K2</label><br>
+          <input type="radio" id="q6c" name="q6" value="Kangchenjunga">
+          <label for="q6c">Kangchenjunga</label>
+        </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question-section">
+        <div class="options">
+            <p>7. I speak without a mouth and hear without ears. I have nobody, but I come alive with wind. What am I?</p>
+          <input type="radio" id="q7a" name="q7" value="Echo" required>
+          <label for="q7a">Echo</label><br>
+          <input type="radio" id="q7b" name="q7" value="Shadow">
+          <label for="q7b">Shadow</label><br>
+          <input type="radio" id="q7c" name="q7" value="Sound">
+          <label for="q7c">Sound</label>
+        </div>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question-section">
+        <p>8. What is the area of a circle with a radius of 0?</p>
+        <div class="options">
+          <input type="radio" id="q8a" name="q8" value="1" required>
+          <label for="q8a">1</label><br>
+          <input type="radio" id="q8b" name="q8" value="Undefined">
+          <label for="q8b">Undefined</label><br>
+          <input type="radio" id="q8c" name="q8" value="0">
+          <label for="q8c">0</label>
+        </div>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question-section">
+        <p>9. If you have me, you want to share me. If you share me, you haven’t got me. What am I?</p>
+        <div class="options">
+          <input type="radio" id="q9a" name="q9" value="a secret" required>
+          <label for="q9a">A Secret</label><br>
+          <input type="radio" id="q9b" name="q9" value="a gift">
+          <label for="q9b">A Gift</label><br>
+          <input type="radio" id="q9c" name="q9" value="money">
+          <label for="q9c">Money</label>
+        </div>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question-section">
+        <p>10. I am always coming, but never arrive. What am I?</p>
+        <div class="options">
+          <input type="radio" id="q10a" name="q10" value="Tomorrow" required>
+          <label for="q10a">Tomorrow</label><br>
+          <input type="radio" id="q10b" name="q10" value="a bus">
+          <label for="q10b">A Bus</label><br>
+          <input type="radio" id="q10c" name="q10" value="a train">
+          <label for="q10c">A Train</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
+      const profession = params.get('profession');
+      if (!name || !profession) {
+        alert("Please enter your name and profession first!");
+        window.location.href = "/index.html";
+        return;
+      }
+      document.getElementById('studentName').value = name;
+      document.getElementById('studentProfession').value = profession;
+    });
+  </script>
+</body>
+</html>

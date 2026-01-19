@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart IQ - Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Smart IQ Logo" class="logo">
+    <h2>Quiz Result</h2>
+    <p id="resultText"></p>
+    <a href="/index.html"><button>Take Quiz Again</button></a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
+      const profession = params.get('profession');
+      const score = params.get('score');
+
+      if (!name || !profession || !score) {
+        alert("Result data missing!");
+        window.location.href = "/index.html";
+        return;
+      }
+
+      document.getElementById('resultText').innerText = 
+        `Hi ${name} (${profession}), your score is ${score}/10!`;
+    });
+  </script>
+</body>
+</html>
